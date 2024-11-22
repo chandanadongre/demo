@@ -73,7 +73,7 @@ section.bg-cover {
     transform: scale(1.05);
 }
 .custom-padding {
-    padding-top: calc(6rem + 7rem); /* For smaller screens */
+    padding-top: calc(6rem + 8rem); /* For smaller screens */
 }
 
 @media (min-width: 768px) {
