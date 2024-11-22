@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Heating and Home Services</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" >
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="./js/index.js" defer></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script> 
+    <script src="./js/navigation.js" defer></script>
+  </head>
+  <div id="header-placeholder"></div>
+  <footer>
+    
+    <div class="mt-8">
+        <div class="flex flex-wrap items-center justify-center gap-8 mt-8">
+            <img src="./img/contract1.png" class="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+            <img src="./img/contract2.png" class="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+            <img src="./img/contract3.png" class="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+            <img src="./img/contract4.png" class="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain border-b-2 border-gray-300">
+        </div>
+    </div>
+    <div class="flex items-center justify-center bg-cover gap-12 max-w-full mt-4 md-2 p-8" style="background-color: #0d382b;">
+        <p class="text-white text-4xl font-bold">Call Today For 24/7 Support</p>
+        <p class="text-yellow-600 text-4xl font-bold">206-207-4734</p>
+    </div>
+    <section class="relative py-16 px-16 flex items-center justify-center bg-cover bg-center text-white">
+        <!-- Background image -->
+        <img src="./img/bg3.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+        
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        
+        <!-- Content -->
+        <div id="schedule-appointment" class="container mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-2">
+                <div class="w-full md:w-1/2">
+                    <img src="./img/icon2.png" alt="Service Image" class="w-full h-auto ">
+                </div>
+    
+                <div class="w-full md:w-1/2 bg-transparent py-2 rounded-lg flex flex-col gap-6">
+                    <h2 class="text-3xl font-bold text-center text-green-900">Schedule Your Appointment!!</h2>
+                    <button class="bg-yellow-600 rounded-full text-white hover:bg-green-900 py-2 px-4">BOOK NOW</button>
+                    <p class="text-xs text-center mb-6">Have general questions or want to say hello? Send us a message</p>
+                    <form class="space-y-4 border-gray-300  w-full float-right">
+                        <div>
+                            <input type="text" id="first-name" name="first-name" 
+                                placeholder="First Name" 
+                                class="w-full px-6 py-2 rounded-lg text-green-900 border-gray-300 focus:ring-yellow-500" 
+                                required>
+                        </div>
+                    
+                        <div>
+                            <input type="text" id="last-name" name="last-name" 
+                                placeholder="Last Name" 
+                                class="w-full px-6 py-2 rounded-lg text-green-900 border border-gray-300 focus:ring-yellow-500" 
+                                required>
+                        </div>
+                        <div>
+                            <input type="tel" id="phone" name="phone" 
+                                placeholder="Phone Number" 
+                                class="w-full px-6 py-2 text-green-900 rounded-lg border border-gray-300 focus:ring-yellow-500" 
+                                required>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" 
+                                placeholder="Email Address" 
+                                class="w-full px-6 py-2 rounded-lg text-green-900 border border-gray-300 focus:ring-yellow-500" 
+                                required>
+                        </div>
+                        <div>
+                            <input type="text" id="address" name="address" 
+                                placeholder="Service Address (Zip Code)" 
+                                class="w-full px-6 py-2 rounded-lg text-green-900 border border-gray-300 focus:ring-yellow-500" 
+                                required>
+                        </div>
+                        <div>
+                            <textarea id="message" name="message" 
+                                placeholder="Message" 
+                                class="w-full px-6 py-2 rounded-lg text-green-900 border border-gray-300 focus:ring-yellow-500" 
+                                rows="4" 
+                                required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-900 bg-opacity-30 text-white border border-gray-300 px-4 py-2 rounded-lg hover:bg-yellow-600 hover:bg-opacity-30 hover:border-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="relative py-16 px-16 flex items-center justify-center bg-cover bg-center text-white">
+        <!-- Background image -->
+        <img src="./img/bg2.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+    
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+    
+        <!-- Text content -->
+        <div class="container mx-auto relative z-10 ">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+              <div class="text-center md:text-left text-xs font-semibold">
+                <h3 class="font-bold text-lg mb-4">QUICK LINKS</h3>
+                <ul>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Heating And Air Repair</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Heating And Air Replacement</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Heating And Air Maintenance</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Generators</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Electrical Services</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Plumbing Services</a></li>
+                  <li><a href="#" class="hover:text-yellow-600 hover:border-b-2">Schedule An Estimate</a></li><br>                
+                </ul>
+              </div>
+              <div class="text-center text-xs font-semibold">
+                <img src="./img/footer.png" alt="Greenwood Logo" class="max-w-full h-auto mb-6">
+                <div class="flex justify-center gap-4 text-xl">
+                  <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+               
+              </div>
+              <div class="text-center md:text-right text-xs font-semibold">
+                <h3 class="font-bold text-lg mb-4">ADDRESS</h3>
+                <h3 class="font-bold text-xl mb-4">Email Address</h3>
+                <p><a href="mailto:info@greenwoodheating.com" class="hover:text-yellow-600">info@greenwoodheating.com</a></p>
+                <p>Main Office: <br>14027 Interurban Ave South<br> Tukwila, WA 98168</p><br>
+                <p>Everett Location: <br>10819 Airport Rd<br> Everett, WA 98204</p>
+              </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 flex items-center ">
+                <!-- Google Map 1 -->
+                <div class="h-48 flex justify-center">
+                    <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06217238074!2d-74.30932166836448!3d40.697019303516804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1731671011048!5m2!1sen!2sin"
+                width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Google Map 2 -->
+                <div class="h-48 flex justify-center">
+                    <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.06217238074!2d-74.30932166836448!3d40.697019303516804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1731671011048!5m2!1sen!2sin"
+                width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>            
+    </section> 
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+   
+      
+</div>
+<div class="bg-gray-200 text-center flex flex-row justify-between p-2">
+    <br>
+    <a href="#" class="font-sans text-gray-600">Copyright © 2024 Greenwood Heating and Services</a>
+    <a href="privacy.html" class="font-sans text-gray-600">Privacy & Policy</a>
+    <a href="terms.html" class="font-sans text-gray-600">Terms & Conditions</a>
+    <br>
+</div>
+</footer>

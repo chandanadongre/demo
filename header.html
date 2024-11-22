@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Heating and Home Services</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" >
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="./js/index.js" defer></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script> 
+    <script src="./js/navigation.js" defer></script>
+  </head>
+  <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-lg">
+    <div class="flex flex-row md:flex-row items-center justify-center px-4 py-4 space-y-4 md:space-y-0 md:space-x-4">
+        <img src="./img/header_logo.png" alt="header logo" class="h-16 md:h-28">
+        <div class="flex flex-col items-center space-y-2 text-center">
+            <div class="flex flex-row items-center space-x-2">
+                <i class="fas fa-phone text-yellow-600 text-2xl"></i>
+                <span class="text-xl md:text-4xl font-bold text-black">206-207-4734</span>
+            </div>
+            <p class="text-sm text-gray-800">
+                Serving Greater Seattle Metro Including King County & Snohomish County
+            </p>
+        </div>
+        <a href="#" class="bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-12 rounded-full transition duration-300">
+            BOOK ONLINE
+        </a>
+    </div>
+    
+    <nav class="text-white py-1" style="background-color: #0d382b;">
+        <button id="menu-btn" class="md:hidden py-3 text-white text-2xl ml-4 sm:ml-6">☰</button>
+          
+        <div class="max-w-7xl mx-auto flex items-center justify-center px-6 py-3">
+            <!-- desktop navbar -->
+            <ul class="hidden md:flex space-x-6 text-sm">
+                <li><a href="index.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HOME</a></li>
+                <li><a href="about.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ABOUT US</a></li>
+                <li class="group relative">
+                    <a href="services_areas.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">SERVICE AREAS</a> &#709;
+                    <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                        <li><a href="area1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PARIS </a></li>
+                        <li><a href="area2.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">TOKYO </a></li>
+                        <li><a href="area3.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">NEW YORK </a></li>
+                    </ul>
+                </li>
+                <li class="group relative">
+                    <a href="services.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">SERVICES</a> &#709;
+                    <ul class="absolute hidden group-hover:block bg-green-900 text-white shadow-lg space-y-2 py-2 w-40 top-4">
+                        <li><a href="service1.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">HEATING & AIR </a></li>
+                        <li><a href="service3.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">ELECTRICAL </a></li>
+                        <li><a href="service2.html" class="block px-4 py-2 hover:bg-white hover:text-green-900 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">PLUMBING </a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">BLOG</a> </li>
+                <li><a href="contact.html" class="hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">CONTACT</a></li>
+            </ul>
+        </div>
+        
+        <!-- Mobile Navbar -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-900 text-white space-y-4 py-4 px-6">
+            <a href="index.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">Home</a>
+            <a href="about.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">About Us</a>
+            <a href="services_areas.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300"></a>
+            <div class="relative">
+                <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                    Service Area &#709;
+                </button>
+                <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                    <a href="area1.html" class="block hover:bg-white hover:text-green-900">Paris</a>
+                    <a href="area2.html" class="block hover:bg-white hover:text-green-900">Tokyo</a>
+                    <a href="area3.html" class="block hover:bg-white hover:text-green-900">New York</a>
+                </div>
+            </div>
+            <a href="services.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300"></a>
+            <div class="relative">
+                <button class="dropdown-toggle w-full text-left flex justify-between items-center hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600">
+                    Services &#709;
+                </button>
+                <div class="dropdown-content hidden bg-green-900 text-white space-y-2 py-2 pl-4">
+                    <a href="service1.html" class="block hover:bg-white hover:text-green-900">Heating And Air</a>
+                    <a href="service3.html" class="block hover:bg-white hover:text-green-900">Electrical</a>
+                    <a href="service2.html" class="block hover:bg-white hover:text-green-900">Plumbing</a>
+                </div>
+            </div>
+            <a href="blog.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">Blog</a>
+            <a href="contact.html" class="block hover:text-yellow-600 hover:border-b-2 hover:border-yellow-600 transition-all duration-300">Contact</a>                             
+        </div>
+    </nav>
+</header>

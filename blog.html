@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood Heating and Home Services</title>
+    <link rel="icon" type="image/png" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/blog.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/navigation.js" defer></script>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+    <div id="header-placeholder"></div>
+    <div class="custom-padding">
+        <section class="relative py-8 px-8  flex flex-col items-center text-white">
+            <!-- Background Image and Overlay -->
+            <img src="./img/blog_bg.jpeg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 w-full h-full bg-black opacity-60"></div>
+        
+            <div class="relative z-10 flex flex-col items-center justify-center text-center md:text-left max-w-5xl h-full">
+                <p class="text-4xl font-bold text-center mt-6 p-6">
+                    BLOGS
+                </p>
+                <p class="text-center text-xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Curabitur venenatis, velit et ultrices volutpat, lorem eros interdum enim, a tincidunt elit nisi vel augue. Nam tristique bibendum arcu.</p>
+        </section>
+        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 pr-6 pl-6 mr-4 ml-4">
+            <!-- Blog posts will be dynamically inserted here -->
+        </div>
+
+        <div class="flex justify-center mt-12">
+            <button id="load-more-btn" 
+                    class="group bg-green-700 text-white px-8 py-3 rounded-full hover:bg-white hover:text-green-800 border-2 border-transparent hover:border-green-700 transition-all duration-300 flex items-center space-x-2">
+                <span>Load More Blogs</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+</body>
+</html>
